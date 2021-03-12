@@ -1,0 +1,115 @@
+#navbar #navbarNavDropdown ul li {
+  padding: 0px 5px 0px 5px;
+}
+#navbarNavDropdown ul li ul {
+  text-align: start;
+  padding-top: 5px;
+  background-color: rgb(24, 35, 44);
+  border-bottom: 5px cadetblue solid;
+}
+#navbarNavDropdown ul li ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+#navbarNavDropdown ul li ul li.dropdown-item-fb:hover {
+  background-color: #3067dd;
+}
+.icon {
+  padding-left: 20px;
+}
+/*pemisah*/
+#navbarNavDropdown ul li ul li.dropdown-item-ig:hover {
+  background-color: #6081c8;
+  width: auto;
+}
+/*pemisah*/
+#navbarNavDropdown ul li ul li.dropdown-item-tw:hover {
+  background-color: #00acee;
+  width: auto;
+}
+/*pemisah*/
+#navbarNavDropdown ul li ul li.dropdown-item-wa:hover {
+  background-color: #25d366;
+  width: auto;
+}
+/*pemisah*/
+#navbarNavDropdown ul li ul li.dropdown-item-gmail:hover {
+  background-color: #d44638;
+  width: auto;
+}
+.jumbotron {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-image: url(../img/wp.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 -100px;
+  color: #eaeaea;
+}
+.jumbotron img {
+  border: 5px solid #eaeaea;
+}
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+#curve {
+  position: absolute;
+}
+.about {
+  margin-top: -50px;
+}
+.pendidikan {
+  margin-top: -100px;
+}
+.card {
+  border: 1px black solid;
+  box-shadow: 5px 10px #888888;
+}
+.pendidikan .pdd {
+  background-color: rgba(39, 48, 54, 0.5);
+}
+.pendidikan .pdd .container {
+  padding-top: 100px;
+}
+#pdd {
+  margin-top: -90px;
+}
+.kontak .container {
+  margin-bottom: 100px;
+}
+
+.animasi {
+  animation-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: scaley(0);
+    transform-origin: center top 0;
+  }
+  100% {
+    transform: scaley(1);
+    transform-origin: center top 0;
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    transform: scaley(0);
+    transform-origin: center top 0;
+  }
+  100% {
+    transform: scaley(1);
+    transform-origin: center top 0;
+  }
+}
+.slideDown {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+}
+footer a {
+  text-decoration: none;
+}
