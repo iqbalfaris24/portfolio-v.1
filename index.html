@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang Saya</a>
@@ -110,7 +110,7 @@
           </div>
         </div>
 
-        <div class="row mx-auto" style="width: 80%">
+        <div class="row mx-auto" style="width: 100%">
           <div class="col text-justify-md mb-5">
             <p>
               &nbsp &nbsp &nbsp &nbsp &nbsp Saya adalah mahasiswa di Universitas Bhayangkara di fakultas Ilmu Komputer. Saya sudah memulai kuliah di tahun 2020 dan sekarang saya sudah masuk semester 2, saya memilih fakultas ini karena saya
@@ -126,7 +126,7 @@
 
     <!-- pendidikan -->
     <section class="pendidikan">
-      <svg id="curve2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#273036"
           fill-opacity="0.5"
@@ -138,31 +138,48 @@
           <div class="row text-center mb-4">
             <h2>Pendidikan</h2>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-4 mb-5 ps-3 pe-3" style="width: 20rem">
-              <div class="card">
+          <div class="row row-cols-1 row-cols-md-4 g-4" id="mbl">
+            <div class="col">
+              <div class="card h-100">
                 <img src="img/sd.png" class="card-img-top" alt="SDN Perwira V" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">SDN Perwira V</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">SDN Perwira V</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2008-2014</small>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5 ps-3 pe-3" style="width: 20rem">
-              <div class="card">
+            <div class="col">
+              <div class="card h-100">
                 <img src="img/smp.png" class="card-img-top" alt="SMPN 38 Bekasi" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">SMPN 38 Bekasi</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">SMPN 38 Bekasi</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2014 - 2018</small>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-5 ps-3 pe-3" style="width: 20rem">
-              <div class="card">
+            <div class="col">
+              <div class="card h-100">
                 <img src="img/smk.jpg" class="card-img-top" alt="SMK Vinama 2" />
                 <div class="card-body">
-                  <h5 class="card-title text-center">SMK Vinama 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">SMK Vinama 2</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2018 - 2020</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="img/UN.jpg" class="card-img-top" alt="Universitas Bhayangkara" />
+                <div class="card-body">
+                  <h5 class="card-title">Universitas Bhayangkara</h5>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">2020 - Sekarang</small>
                 </div>
               </div>
             </div>
@@ -267,6 +284,18 @@
           })
           .catch((error) => console.error("Error!", error.message));
       });
+    </script>
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("navbar");
+      var btns = header.getElementsByClassName("nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
     </script>
   </body>
 </html>
